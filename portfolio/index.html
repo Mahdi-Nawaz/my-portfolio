@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahdi Nawaz | Data Analytics Portfolio</title>
+  <meta name="description" content="Portfolio of Mahdi Nawaz, B.Tech CSE student and data analytics intern. Customer churn prediction with Python, scikit-learn, XGBoost, SHAP, Streamlit and Power BI.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav" id="top">
+    <a class="brand" href="#top" aria-label="Mahdi Nawaz, home">MN<span>.</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="navLinks" class="links" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+      <button class="theme-btn" id="themeBtn" aria-label="Switch between dark and light theme">Theme</button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Data Analytics &middot; Machine Learning</p>
+          <h1>Mahdi Nawaz</h1>
+          <p class="lead">B.Tech Computer Science student who turns raw customer data into predictions and clear business decisions.</p>
+          <div class="cta">
+            <a class="btn primary" href="#projects">View my project</a>
+            <a class="btn" href="#contact">Get in touch</a>
+          </div>
+        </div>
+        <ul class="stats" aria-label="Highlights">
+          <li><strong>7,043</strong><span>customers analysed</span></li>
+          <li><strong>0.842</strong><span>ROC-AUC, best model</span></li>
+          <li><strong>3</strong><span>models compared</span></li>
+          <li><strong>2</strong><span>apps delivered</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="wrap">
+        <h2 class="reveal">About</h2>
+        <div class="about reveal">
+          <p>I am a B.Tech student in Computer Science and Engineering at GNA University, Phagwara, focused on data analytics. I enjoy the full path from a messy CSV file to something a manager can act on: cleaning the data, finding patterns, building a model, and explaining the result in plain language.</p>
+          <p>I completed a Data Analytics internship at Recimo Tech Solutions, Srinagar, where I built an end-to-end customer churn prediction project covering data cleaning, exploratory analysis, three machine learning models, model explanation with SHAP, a Streamlit prediction app and a Power BI dashboard.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt">
+      <div class="wrap">
+        <h2 class="reveal">Skills</h2>
+        <div class="cards three">
+          <article class="card reveal">
+            <h3>Analysis</h3>
+            <ul class="chips"><li>Python</li><li>pandas</li><li>NumPy</li><li>Exploratory data analysis</li><li>Data cleaning</li></ul>
+          </article>
+          <article class="card reveal">
+            <h3>Machine learning</h3>
+            <ul class="chips"><li>scikit-learn</li><li>Logistic Regression</li><li>Random Forest</li><li>XGBoost</li><li>SHAP</li></ul>
+          </article>
+          <article class="card reveal">
+            <h3>Visualisation and tools</h3>
+            <ul class="chips"><li>Matplotlib</li><li>Seaborn</li><li>Power BI</li><li>Streamlit</li><li>Jupyter</li><li>Git and GitHub</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="wrap">
+        <h2 class="reveal">Project</h2>
+
+        <article class="project reveal">
+          <div class="project-text">
+            <p class="eyebrow">Featured &middot; Internship project</p>
+            <h3>Customer Churn Prediction</h3>
+            <p>An end-to-end analytics project on the IBM Telco dataset (7,043 customers, 21 attributes). It finds why customers leave, predicts who is at risk, and presents the results through a web app and a dashboard.</p>
+
+            <h4>What I did</h4>
+            <ul class="list">
+              <li>Cleaned the data: fixed the text-typed <code>TotalCharges</code> column and 11 blank values that belonged to brand-new customers.</li>
+              <li>Analysed churn drivers. Month-to-month contracts churn at 42.7% against 2.8% on two-year contracts, and 55.5% of churners left in their first year.</li>
+              <li>Compared Logistic Regression, Random Forest and XGBoost on a stratified 80/20 split. Logistic Regression reached ROC-AUC 0.842 and 81% accuracy; XGBoost caught the most churners (70% recall).</li>
+              <li>Explained the model with SHAP and built a Streamlit app and a Power BI dashboard for revenue at risk.</li>
+            </ul>
+
+            <ul class="chips"><li>Python</li><li>pandas</li><li>scikit-learn</li><li>XGBoost</li><li>SHAP</li><li>Streamlit</li><li>Power BI</li></ul>
+
+            <div class="cta">
+              <a class="btn primary" href="https://github.com/YOUR-USERNAME/churn-prediction" target="_blank" rel="noopener">View code on GitHub</a>
+            </div>
+          </div>
+
+          <div class="project-media">
+            <figure>
+              <img src="assets/churn-by-contract.png" alt="Bar chart: churn rate is 42.7% for month-to-month, 11.3% for one-year and 2.8% for two-year contracts" loading="lazy">
+              <figcaption>Churn rate by contract type</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/contract-internet-heatmap.png" alt="Heatmap of churn rate by contract type and internet service" loading="lazy">
+              <figcaption>Highest risk: month-to-month fiber optic customers (54.6%)</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/protective-services.png" alt="Bar chart: churn falls from 56.7% with no protective services to 5.3% with all four" loading="lazy">
+              <figcaption>Churn by number of protective services held</figcaption>
+            </figure>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section alt">
+      <div class="wrap">
+        <h2 class="reveal">Experience and education</h2>
+        <ol class="timeline">
+          <li class="reveal">
+            <span class="when">29 Jun 2026 &ndash; 14 Aug 2026</span>
+            <h3>Data Analytics Intern</h3>
+            <p class="where">Recimo Tech Solutions, Srinagar</p>
+            <p>Completed an internship in Data Analytics and delivered the customer churn prediction project from raw data to a dashboard and prediction app.</p>
+          </li>
+          <li class="reveal">
+            <span class="when">Currently studying</span>
+            <h3>B.Tech, Computer Science and Engineering</h3>
+            <p class="where">School of Engineering, Design and Automation, GNA University, Phagwara</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="wrap contact reveal">
+        <h2>Contact</h2>
+        <p>I am looking for data analytics internships and entry-level roles. The best way to reach me is email.</p>
+        <div class="cta center">
+          <a class="btn primary" href="mailto:your-email@example.com">your-email@example.com</a>
+          <a class="btn" href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>&copy; <span id="year">2026</span> Mahdi Nawaz</p>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
