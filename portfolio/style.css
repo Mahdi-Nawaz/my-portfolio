@@ -912,6 +912,23 @@ code {
    CERTIFICATIONS SECTION
    ========================================================================== */
 
+.cert-year-heading {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--accent-strong);
+  margin: 32px 0 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cert-year-heading::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background: var(--border);
+}
+
 .cert-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
