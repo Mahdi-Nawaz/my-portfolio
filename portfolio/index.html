@@ -3,167 +3,764 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mahdi Nawaz | Data Analytics Portfolio</title>
-  <meta name="description" content="Portfolio of Mahdi Nawaz, B.Tech CSE student and data analytics intern. Customer churn prediction with Python, scikit-learn, XGBoost, SHAP, Streamlit and Power BI.">
+  <title>Mahdi Nawaz | AI/ML & Data Analytics Portfolio</title>
+  <meta name="description" content="Portfolio of Mahdi Nawaz — B.Tech Computer Science student specializing in AI/ML Engineering and Data Analytics. Creator of DataMind AI, Sahaara AI, GyaanBuddy, EcoCraft AR, and Customer Churn Analytics.">
+  <meta name="keywords" content="Mahdi Nawaz, Data Analyst, Machine Learning Engineer, AI Intern, Python, Power BI, Streamlit, XGBoost, Scikit-learn, LLMs, Computer Vision">
+  <meta name="author" content="Mahdi Nawaz">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mahdi Nawaz | AI/ML & Data Analytics Portfolio">
+  <meta property="og:description" content="Explore live-deployed AI/ML systems, predictive models, interactive Power BI dashboards, and NLP applications built by Mahdi Nawaz.">
+  <meta property="og:image" content="assets/profile.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans (Headings), Inter (Body), JetBrains Mono (Code/Metrics) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- Sticky Navigation Bar -->
   <header class="nav" id="top">
-    <a class="brand" href="#top" aria-label="Mahdi Nawaz, home">MN<span>.</span></a>
-    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
-      <span></span><span></span><span></span>
-    </button>
-    <nav id="navLinks" class="links" aria-label="Main">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
-      <button class="theme-btn" id="themeBtn" aria-label="Switch between dark and light theme">Theme</button>
-    </nav>
+    <div class="nav-container">
+      <a class="brand" href="#top" aria-label="Mahdi Nawaz, home">
+        <span class="brand-avatar-mini">
+          <img src="assets/profile.png" alt="Mahdi Nawaz profile thumbnail">
+        </span>
+        <span class="brand-text">MN<span>.</span></span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="navLinks" class="links" aria-label="Main Navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        
+        <button class="theme-btn" id="themeBtn" aria-label="Switch between dark and light theme" title="Toggle Theme">
+          <span class="theme-icon" id="themeIcon">🌙</span>
+          <span class="theme-text" id="themeText">Dark</span>
+        </button>
+      </nav>
+    </div>
   </header>
 
   <main>
 
-    <!-- HERO -->
+    <!-- HERO SECTION -->
     <section class="hero">
       <div class="wrap hero-grid">
-        <div>
-          <p class="eyebrow">Data Analytics &middot; Machine Learning</p>
-          <h1>Mahdi Nawaz</h1>
-          <p class="lead">B.Tech Computer Science student who turns raw customer data into predictions and clear business decisions.</p>
-          <div class="cta">
-            <a class="btn primary" href="#projects">View my project</a>
-            <a class="btn" href="#contact">Get in touch</a>
+        
+        <div class="hero-content">
+          <div class="badge-status">
+            <span class="status-pulse"></span>
+            <span>Open to AI/ML & Data Analytics Internships</span>
           </div>
+
+          <h1>Mahdi Nawaz</h1>
+          <p class="role-title">AI / Machine Learning &middot; Data Analytics Specialist</p>
+          <p class="lead">
+            B.Tech Computer Science student who bridges <strong>machine learning algorithms, LLMs, and business intelligence</strong>. I design end-to-end data pipelines, predictive models, and intuitive web apps that convert raw data into high-stakes business decisions.
+          </p>
+
+          <div class="cta">
+            <a class="btn primary" href="#projects">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+              Explore Projects
+            </a>
+            <a class="btn secondary" href="#certifications">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+              View Certifications
+            </a>
+            <a class="btn outline" href="mailto:mahdienawaz@gmail.com" id="btnContactHero">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              Get in Touch
+            </a>
+          </div>
+
+          <!-- Highlight KPI Stats -->
+          <ul class="stats" aria-label="Career Highlights">
+            <li>
+              <strong>5+</strong>
+              <span>Live Deployed Systems</span>
+            </li>
+            <li>
+              <strong>0.842</strong>
+              <span>Best Model ROC-AUC</span>
+            </li>
+            <li>
+              <strong>7,043+</strong>
+              <span>Customer Data Analyzed</span>
+            </li>
+            <li>
+              <strong>5</strong>
+              <span>Industry Certifications</span>
+            </li>
+          </ul>
         </div>
-        <ul class="stats" aria-label="Highlights">
-          <li><strong>7,043</strong><span>customers analysed</span></li>
-          <li><strong>0.842</strong><span>ROC-AUC, best model</span></li>
-          <li><strong>3</strong><span>models compared</span></li>
-          <li><strong>2</strong><span>apps delivered</span></li>
-        </ul>
-      </div>
-    </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="section">
-      <div class="wrap">
-        <h2 class="reveal">About</h2>
-        <div class="about reveal">
-          <p>I am a B.Tech student in Computer Science and Engineering at GNA University, Phagwara, focused on data analytics. I enjoy the full path from a messy CSV file to something a manager can act on: cleaning the data, finding patterns, building a model, and explaining the result in plain language.</p>
-          <p>I completed a Data Analytics internship at Recimo Tech Solutions, Srinagar, where I built an end-to-end customer churn prediction project covering data cleaning, exploratory analysis, three machine learning models, model explanation with SHAP, a Streamlit prediction app and a Power BI dashboard.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills" class="section alt">
-      <div class="wrap">
-        <h2 class="reveal">Skills</h2>
-        <div class="cards three">
-          <article class="card reveal">
-            <h3>Analysis</h3>
-            <ul class="chips"><li>Python</li><li>pandas</li><li>NumPy</li><li>Exploratory data analysis</li><li>Data cleaning</li></ul>
-          </article>
-          <article class="card reveal">
-            <h3>Machine learning</h3>
-            <ul class="chips"><li>scikit-learn</li><li>Logistic Regression</li><li>Random Forest</li><li>XGBoost</li><li>SHAP</li></ul>
-          </article>
-          <article class="card reveal">
-            <h3>Visualisation and tools</h3>
-            <ul class="chips"><li>Matplotlib</li><li>Seaborn</li><li>Power BI</li><li>Streamlit</li><li>Jupyter</li><li>Git and GitHub</li></ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <div class="wrap">
-        <h2 class="reveal">Project</h2>
-
-        <article class="project reveal">
-          <div class="project-text">
-            <p class="eyebrow">Featured &middot; Internship project</p>
-            <h3>Customer Churn Prediction</h3>
-            <p>An end-to-end analytics project on the IBM Telco dataset (7,043 customers, 21 attributes). It finds why customers leave, predicts who is at risk, and presents the results through a web app and a dashboard.</p>
-
-            <h4>What I did</h4>
-            <ul class="list">
-              <li>Cleaned the data: fixed the text-typed <code>TotalCharges</code> column and 11 blank values that belonged to brand-new customers.</li>
-              <li>Analysed churn drivers. Month-to-month contracts churn at 42.7% against 2.8% on two-year contracts, and 55.5% of churners left in their first year.</li>
-              <li>Compared Logistic Regression, Random Forest and XGBoost on a stratified 80/20 split. Logistic Regression reached ROC-AUC 0.842 and 81% accuracy; XGBoost caught the most churners (70% recall).</li>
-              <li>Explained the model with SHAP and built a Streamlit app and a Power BI dashboard for revenue at risk.</li>
-            </ul>
-
-            <ul class="chips"><li>Python</li><li>pandas</li><li>scikit-learn</li><li>XGBoost</li><li>SHAP</li><li>Streamlit</li><li>Power BI</li></ul>
-
-            <div class="cta">
-              <a class="btn primary" href="https://github.com/YOUR-USERNAME/churn-prediction" target="_blank" rel="noopener">View code on GitHub</a>
+        <!-- Profile Photo Card -->
+        <div class="hero-visual">
+          <div class="avatar-card">
+            <div class="avatar-halo"></div>
+            <div class="avatar-frame">
+              <img src="assets/profile.png" alt="Mahdi Nawaz — AI/ML and Data Analytics Specialist" class="avatar-img">
+            </div>
+            <div class="avatar-badge">
+              <span class="badge-icon">📍</span>
+              <div>
+                <strong>GNA University</strong>
+                <span>B.Tech CSE &middot; Class of 2027</span>
+              </div>
             </div>
           </div>
+        </div>
 
-          <div class="project-media">
-            <figure>
-              <img src="assets/churn-by-contract.png" alt="Bar chart: churn rate is 42.7% for month-to-month, 11.3% for one-year and 2.8% for two-year contracts" loading="lazy">
-              <figcaption>Churn rate by contract type</figcaption>
-            </figure>
-            <figure>
-              <img src="assets/contract-internet-heatmap.png" alt="Heatmap of churn rate by contract type and internet service" loading="lazy">
-              <figcaption>Highest risk: month-to-month fiber optic customers (54.6%)</figcaption>
-            </figure>
-            <figure>
-              <img src="assets/protective-services.png" alt="Bar chart: churn falls from 56.7% with no protective services to 5.3% with all four" loading="lazy">
-              <figcaption>Churn by number of protective services held</figcaption>
-            </figure>
-          </div>
-        </article>
       </div>
     </section>
 
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section alt">
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
       <div class="wrap">
-        <h2 class="reveal">Experience and education</h2>
+        <div class="section-header reveal">
+          <p class="eyebrow">Background</p>
+          <h2>About Me</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I am a Computer Science & Engineering undergraduate at <strong>GNA University, Phagwara</strong>, specializing in data analytics and intelligent AI systems. My passion lies in taking messy, unstructured, real-world data and translating it into actionable business intelligence and production-ready applications.
+            </p>
+            <p>
+              During my <strong>Data Analytics Internship at Recimo Tech Solutions</strong>, I engineered an end-to-end customer churn prediction pipeline on IBM Telco data—covering data wrangling, exploratory data analysis, three benchmarked machine learning models (Logistic Regression, Random Forest, XGBoost), explainable AI with SHAP values, a live Streamlit decision application, and a revenue-at-risk Power BI dashboard.
+            </p>
+            <p>
+              Beyond traditional tabular machine learning, I actively build <strong>LLM-powered assistants, multi-modal computer vision applications, and educational AI tools</strong>. I focus heavily on reliability: sandboxed code execution, radical child privacy, and self-repairing agent loops.
+            </p>
+          </div>
+
+          <div class="about-highlights reveal">
+            <div class="highlight-box">
+              <div class="hl-icon">🎯</div>
+              <div>
+                <h4>What I Bring to Your Team</h4>
+                <p>Strong math and statistical foundations, rigorous data cleaning, proficiency with modern ML libraries, and the design ability to ship usable user-facing web apps.</p>
+              </div>
+            </div>
+            <div class="highlight-box">
+              <div class="hl-icon">🚀</div>
+              <div>
+                <h4>Target Internship Roles</h4>
+                <p><strong>AI/ML Engineer Intern</strong> &middot; <strong>Data Analyst Intern</strong> &middot; <strong>Business Intelligence Specialist</strong></p>
+              </div>
+            </div>
+            <div class="highlight-box">
+              <div class="hl-icon">⚡</div>
+              <div>
+                <h4>Core Philosophy</h4>
+                <p>"Models are only as good as the decisions they empower." I build systems with transparency, explainability (SHAP), and real business metric alignment.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section alt">
+      <div class="wrap">
+        <div class="section-header reveal">
+          <p class="eyebrow">Technical Competencies</p>
+          <h2>Skills & Technologies</h2>
+        </div>
+
+        <div class="cards three">
+          <article class="card reveal">
+            <div class="card-icon-header">
+              <span class="card-icon">🧠</span>
+              <h3>AI & Machine Learning</h3>
+            </div>
+            <p class="card-desc">Predictive modeling, deep learning foundations, and modern LLM agents.</p>
+            <ul class="chips">
+              <li>Scikit-Learn</li>
+              <li>XGBoost</li>
+              <li>Logistic Regression</li>
+              <li>Random Forest</li>
+              <li>SHAP (Explainable AI)</li>
+              <li>Google Gemini API</li>
+              <li>Anthropic Claude API</li>
+              <li>LLM Prompt Engineering</li>
+              <li>Sentiment Analysis</li>
+              <li>Computer Vision / OCR</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-icon-header">
+              <span class="card-icon">📊</span>
+              <h3>Data Analytics & BI</h3>
+            </div>
+            <p class="card-desc">End-to-end data wrangling, exploratory data analysis, and dashboarding.</p>
+            <ul class="chips">
+              <li>Python</li>
+              <li>Pandas</li>
+              <li>NumPy</li>
+              <li>Microsoft Power BI</li>
+              <li>DAX & Power Query</li>
+              <li>Exploratory Data Analysis</li>
+              <li>Data Cleaning & Imputation</li>
+              <li>Plotly Interactive</li>
+              <li>Matplotlib & Seaborn</li>
+              <li>Data Storytelling</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-icon-header">
+              <span class="card-icon">💻</span>
+              <h3>Web, Tools & Architecture</h3>
+            </div>
+            <p class="card-desc">Building and deploying interactive products with clean testing practices.</p>
+            <ul class="chips">
+              <li>Streamlit</li>
+              <li>Three.js (3D AR)</li>
+              <li>JavaScript & HTML5/CSS3</li>
+              <li>REST APIs</li>
+              <li>Pytest (Unit & Safety)</li>
+              <li>Git & GitHub</li>
+              <li>Jupyter Notebook</li>
+              <li>AST Code Sandboxing</li>
+              <li>Vercel Deployment</li>
+              <li>Speech / Audio Synthesis</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+      <div class="wrap">
+        <div class="section-header reveal">
+          <p class="eyebrow">Portfolio</p>
+          <h2>Featured Projects</h2>
+          <p class="section-subtitle">Real-world applications spanning intelligent data analysis, customer retention models, multimodal educational AI, and augmented reality.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filter-bar reveal">
+          <button class="filter-btn active" data-filter="all">All Projects (5)</button>
+          <button class="filter-btn" data-filter="ai-ml">AI & Machine Learning</button>
+          <button class="filter-btn" data-filter="data-analytics">Data Analytics & BI</button>
+        </div>
+
+        <div class="projects-container">
+
+          <!-- PROJECT 1: DataMind AI -->
+          <article class="project-card reveal" data-category="ai-ml data-analytics">
+            <div class="project-header">
+              <div class="project-meta">
+                <span class="badge featured">⭐ Flagship AI & Analytics</span>
+                <span class="badge tag">Live App</span>
+              </div>
+              <h3 class="project-title">DataMind AI &mdash; Intelligent Data Analyst Chatbot</h3>
+              <p class="project-summary">
+                An AI-driven data intelligence application that lets users upload CSV and Excel datasets, ask natural-language questions, and automatically get answers as data tables, interactive Plotly visualizations, and plain-English narrative summaries.
+              </p>
+            </div>
+
+            <div class="project-body">
+              <h4>Key Engineering & Architecture Highlights</h4>
+              <ul class="list">
+                <li><strong>Natural Language to Code:</strong> Translates user prompts into pandas operations and Plotly figures executed safely in a sandboxed AST-validated executor.</li>
+                <li><strong>Self-Repairing Agent Loop:</strong> Automatically intercepts code execution errors and feeds tracebacks back to the LLM for instantaneous automated self-correction.</li>
+                <li><strong>Automated Data Profiler:</strong> One-click health check detecting missing value percentages, duplicate entries, column skewness, and high-cardinality outliers.</li>
+                <li><strong>Zero-Data-Leak Architecture:</strong> Only metadata schema and sample row snippets are sent to LLMs—ensuring full enterprise data privacy.</li>
+                <li><strong>Offline Fallback Guarantee:</strong> Includes a deterministic rule-based analysis engine so queries work reliably even without an external API key.</li>
+              </ul>
+
+              <div class="project-badges-row">
+                <ul class="chips">
+                  <li>Python</li>
+                  <li>Pandas</li>
+                  <li>Streamlit</li>
+                  <li>Plotly</li>
+                  <li>Claude / LLM API</li>
+                  <li>AST Code Sandbox</li>
+                  <li>Data Profiling</li>
+                </ul>
+              </div>
+
+              <div class="project-actions">
+                <a class="btn primary" href="https://datamind-ai-intelligent.streamlit.app/" target="_blank" rel="noopener">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  Launch Live App
+                </a>
+                <a class="btn" href="https://github.com/Mahdi-Nawaz/DataMind-AI-Intelligent-Data-Analyst-Chatbot" target="_blank" rel="noopener">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                  View GitHub Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: Customer Churn Prediction -->
+          <article class="project-card reveal" data-category="data-analytics ai-ml">
+            <div class="project-header">
+              <div class="project-meta">
+                <span class="badge featured">Internship Project &middot; Recimo Tech</span>
+                <span class="badge tag">ML & BI</span>
+              </div>
+              <h3 class="project-title">Customer Churn Prediction & Revenue Intelligence</h3>
+              <p class="project-summary">
+                An end-to-end predictive machine learning solution on 7,043 customer accounts (IBM Telco dataset) pinpointing why customers churn, isolating high-risk cohorts, and translating predictions into retention strategies via a live prediction app and Power BI dashboard.
+              </p>
+            </div>
+
+            <div class="project-grid-media">
+              <div class="project-details">
+                <h4>Quantitative Results & Key Findings</h4>
+                <ul class="list">
+                  <li><strong>Data Wrangling:</strong> Cleaned the text-typed <code>TotalCharges</code> column and properly imputed 11 blank values belonging to newly onboarded customers.</li>
+                  <li><strong>Churn Disparities:</strong> Discovered that month-to-month contracts suffer a <strong>42.7% churn rate</strong> compared to only <strong>2.8%</strong> for two-year contracts, and <strong>55.5%</strong> of all churners leave within year one.</li>
+                  <li><strong>Model Benchmarking:</strong> Trained and tested Logistic Regression, Random Forest, and XGBoost on a stratified 80/20 split. Logistic Regression delivered <strong>ROC-AUC 0.842</strong> and 81% accuracy; XGBoost captured <strong>70% recall</strong> on churners.</li>
+                  <li><strong>Explainable AI (XAI):</strong> Interpreted feature importance using SHAP values (tenure, contract type, and monthly charges driving risk).</li>
+                  <li><strong>Business Deliverables:</strong> Built a Streamlit predictive inference app and an executive Power BI dashboard calculating revenue-at-risk.</li>
+                </ul>
+
+                <div class="project-badges-row">
+                  <ul class="chips">
+                    <li>Python</li>
+                    <li>Pandas</li>
+                    <li>Scikit-Learn</li>
+                    <li>XGBoost</li>
+                    <li>SHAP Values</li>
+                    <li>Streamlit</li>
+                    <li>Power BI</li>
+                  </ul>
+                </div>
+
+                <div class="project-actions">
+                  <a class="btn primary" href="https://github.com/Mahdi-Nawaz/churn-prediction" target="_blank" rel="noopener">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                    View Project on GitHub
+                  </a>
+                </div>
+              </div>
+
+              <!-- Visual Charts Media Gallery -->
+              <div class="project-media-col">
+                <p class="media-hint">Click charts to view high-resolution analysis:</p>
+                <div class="media-gallery">
+                  <figure class="media-item" onclick="openLightbox('assets/churn-by-contract.png', 'Churn Rate by Contract Type (Month-to-month: 42.7% vs Two-year: 2.8%)')">
+                    <img src="assets/churn-by-contract.png" alt="Bar chart showing churn rate by contract type" loading="lazy">
+                    <figcaption>🔍 Contract Churn: 42.7% Month-to-Month vs 2.8% 2-Year</figcaption>
+                  </figure>
+                  <figure class="media-item" onclick="openLightbox('assets/contract-internet-heatmap.png', 'Heatmap of churn rate by contract type and internet service')">
+                    <img src="assets/contract-internet-heatmap.png" alt="Heatmap of churn rate by contract type and internet service" loading="lazy">
+                    <figcaption>🔍 Risk Matrix: Month-to-Month Fiber Optic at 54.6% Churn</figcaption>
+                  </figure>
+                  <figure class="media-item" onclick="openLightbox('assets/protective-services.png', 'Churn falls from 56.7% with no protective services to 5.3% with all four')">
+                    <img src="assets/protective-services.png" alt="Bar chart: churn falls from 56.7% with no protective services to 5.3% with all four" loading="lazy">
+                    <figcaption>🔍 Protective Bundles: Churn drops from 56.7% to 5.3%</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: Sahaara AI -->
+          <article class="project-card reveal" data-category="ai-ml">
+            <div class="project-header">
+              <div class="project-meta">
+                <span class="badge tag">LLMs &middot; Speech &middot; NLP</span>
+                <span class="badge tag">Live App</span>
+              </div>
+              <h3 class="project-title">Sahaara AI &mdash; Empathetic Emotional Wellness Companion</h3>
+              <p class="project-summary">
+                An empathetic AI wellness companion built to provide accessible, non-judgmental conversational support. Features interactive voice messaging, multi-lingual capability (English, Hindi, Hinglish), sentiment tracking, and strict triage safety protocols.
+              </p>
+            </div>
+
+            <div class="project-body">
+              <h4>Key Capabilities & Technical Highlights</h4>
+              <ul class="list">
+                <li><strong>Empathetic Conversational LLM:</strong> Powered by the Google Gemini API with customized psychological prompt architectures focused on supportive counseling and de-escalation.</li>
+                <li><strong>Voice Studio & Audio Playback:</strong> Users can speak their thoughts directly via microphone input (transcribed in real time) and listen to soothing voice replies powered by <code>gTTS</code> (native Indian English and Hindi).</li>
+                <li><strong>Emotional State Tracking:</strong> Analyzes user mood check-ins (Anxious, Low, Unmotivated, Heartbroken) to deliver tailored reframing exercises and coping strategies.</li>
+                <li><strong>Crisis Guardrail & Helpline Routing:</strong> Real-time distress signal detection that immediately surfaces India Emergency <code>112</code> and Tele-MANAS National Mental Health Helpline <code>14416</code>.</li>
+              </ul>
+
+              <div class="project-badges-row">
+                <ul class="chips">
+                  <li>Python</li>
+                  <li>Google Gemini API</li>
+                  <li>Streamlit</li>
+                  <li>gTTS (Text-to-Speech)</li>
+                  <li>Audio Processing</li>
+                  <li>Crisis Triage</li>
+                  <li>Multilingual NLP</li>
+                </ul>
+              </div>
+
+              <div class="project-actions">
+                <a class="btn primary" href="https://sahaara-ai-mahdi.streamlit.app/" target="_blank" rel="noopener">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  Launch Live App
+                </a>
+                <a class="btn" href="https://github.com/Mahdi-Nawaz/Sahaara-AI" target="_blank" rel="noopener">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                  View GitHub Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: GyaanBuddy -->
+          <article class="project-card reveal" data-category="ai-ml data-analytics">
+            <div class="project-header">
+              <div class="project-meta">
+                <span class="badge tag">Multimodal Vision AI</span>
+                <span class="badge tag">Live App</span>
+              </div>
+              <h3 class="project-title">GyaanBuddy &mdash; Kid-Safe Multimodal AI Science & Maths Tutor</h3>
+              <p class="project-summary">
+                An interactive, bilingual learning platform for school students (Classes 1–8). Features "Snap & Solve" camera question-solving using multimodal vision AI, 7 hands-on physics and chemistry simulation labs, parent analytics telemetry, and strict safety guardrails backed by 123 automated tests.
+              </p>
+            </div>
+
+            <div class="project-body">
+              <h4>Key Capabilities & Technical Highlights</h4>
+              <ul class="list">
+                <li><strong>Snap & Solve Multimodal Vision:</strong> Enables students to photograph handwritten or printed textbook math/science problems using a webcam or mobile camera for step-by-step Socratic explanations.</li>
+                <li><strong>7 Interactive STEM Simulation Labs:</strong> Includes dynamic physics electrical circuits, light prism refraction, atomic structure builder (Elements 1–20), Pythagorean triplet visualizer, and a real-time human vital signs ECG monitor.</li>
+                <li><strong>Parent & Educator Analytics:</strong> Real-time dashboard tracking accuracy trends, explored STEM concepts, session time, safety logs, and one-click CSV report exports.</li>
+                <li><strong>Rigorous Child-Safety Engine:</strong> Features PII redaction, harmful content filtering (tested with 123 unit tests in <code>pytest</code>), and Childline <code>1098</code> routing.</li>
+              </ul>
+
+              <div class="project-badges-row">
+                <ul class="chips">
+                  <li>Python</li>
+                  <li>Streamlit</li>
+                  <li>Multimodal Vision AI</li>
+                  <li>Pytest (123 Passed)</li>
+                  <li>Interactive SVGs</li>
+                  <li>Parent Analytics</li>
+                  <li>Safety & PII Filtering</li>
+                </ul>
+              </div>
+
+              <div class="project-actions">
+                <a class="btn primary" href="https://gyaanbuddy.streamlit.app/" target="_blank" rel="noopener">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  Launch Live App
+                </a>
+                <a class="btn" href="https://github.com/Mahdi-Nawaz/gyaanbuddy" target="_blank" rel="noopener">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                  View GitHub Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 5: EcoCraft -->
+          <article class="project-card reveal" data-category="ai-ml">
+            <div class="project-header">
+              <div class="project-meta">
+                <span class="badge tag">Computer Vision &middot; Three.js AR</span>
+                <span class="badge tag">Live Web App</span>
+              </div>
+              <h3 class="project-title">EcoCraft &mdash; AR Backyard & Nature Detective</h3>
+              <p class="project-summary">
+                A gamified, privacy-first Augmented Reality detective web app. Turns surroundings into interactive STEM expeditions using browser camera feeds, 3D animated sprites, live speech narration, and NGSS curriculum-aligned science challenges.
+              </p>
+            </div>
+
+            <div class="project-body">
+              <h4>Key Capabilities & Technical Highlights</h4>
+              <ul class="list">
+                <li><strong>3D Augmented Reality Engine:</strong> Built with <strong>Three.js</strong>, overlaying real-time interactive 3D Eco-Sprites onto web camera feeds with custom reticle HUD scanning.</li>
+                <li><strong>100% On-Device Client Privacy:</strong> Operates entirely client-side with zero cloud video telemetry, zero tracking, and complete COPPA compliance.</li>
+                <li><strong>Interactive Speech Narration:</strong> Integrates Web Speech API voice synthesis for audio lessons on botany, geology, and animal adaptations.</li>
+                <li><strong>Teacher's Hub & Gamification:</strong> Level progression, badge journals (EcoDex), XP counters, and printable certificates of exploration.</li>
+              </ul>
+
+              <div class="project-badges-row">
+                <ul class="chips">
+                  <li>JavaScript</li>
+                  <li>Three.js 3D Engine</li>
+                  <li>HTML5 Canvas</li>
+                  <li>Web Camera Vision</li>
+                  <li>Web Speech API</li>
+                  <li>COPPA Compliant</li>
+                  <li>Vercel Deploy</li>
+                </ul>
+              </div>
+
+              <div class="project-actions">
+                <a class="btn primary" href="https://ecocraft-nature-detective.vercel.app/" target="_blank" rel="noopener">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  Launch Live App
+                </a>
+                <a class="btn" href="https://github.com/Mahdi-Nawaz/ecocraft-nature-detective" target="_blank" rel="noopener">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                  View GitHub Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section id="certifications" class="section alt">
+      <div class="wrap">
+        <div class="section-header reveal">
+          <p class="eyebrow">Verified Credentials</p>
+          <h2>Certifications & Accreditations</h2>
+          <p class="section-subtitle">Formal training in data analysis, business intelligence, Power BI engineering, and Python data science.</p>
+        </div>
+
+        <div class="cert-grid">
+
+          <!-- Cert 1: Microsoft -->
+          <article class="cert-card reveal">
+            <div class="cert-top">
+              <div class="cert-badge-brand ms-badge">
+                <svg width="24" height="24" viewBox="0 0 23 23">
+                  <path fill="#f35325" d="M1 1h10v10H1z"/>
+                  <path fill="#81bc06" d="M12 1h10v10H12z"/>
+                  <path fill="#05a6f0" d="M1 12h10v10H1z"/>
+                  <path fill="#ffba08" d="M12 12h10v10H12z"/>
+                </svg>
+                <span>Microsoft Learn</span>
+              </div>
+              <span class="cert-date">Sept 2026</span>
+            </div>
+            <h3 class="cert-title">Clean, Transform, and Load Data in Power BI</h3>
+            <p class="cert-issuer">Authorized by Satya Nadella &middot; Microsoft</p>
+            <p class="cert-desc">Mastery of Power Query transformations, handling anomalies, shaping relational data schemas, and optimizing ETL data pipelines in Power BI.</p>
+            <div class="cert-footer">
+              <a class="btn-cert" href="assets/certificates/microsoft-powerbi-cert.pdf" target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                View Official PDF
+              </a>
+              <a class="cert-verify-link" href="https://learn.microsoft.com/en-gb/users/mahdinawaz-3063/achievements/print/4c7j73yk" target="_blank" rel="noopener">
+                Verify Online &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- Cert 2: Coder Roots -->
+          <article class="cert-card reveal">
+            <div class="cert-top">
+              <div class="cert-badge-brand cr-badge">
+                <span class="cert-pill-icon">📜</span>
+                <span>Coder Roots &middot; ISO 27001</span>
+              </div>
+              <span class="cert-date">Jul &ndash; Aug 2025</span>
+            </div>
+            <h3 class="cert-title">Python & Data Science Training</h3>
+            <p class="cert-issuer">Ref: CR/INT25/175 &middot; IAF Accredited</p>
+            <p class="cert-desc">Comprehensive industry training covering core Python, algorithmic data structures, pandas, NumPy, exploratory analysis, and predictive modeling.</p>
+            <div class="cert-footer">
+              <a class="btn-cert" href="assets/certificates/coder-roots-python-datascience.pdf" target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                View Official Certificate
+              </a>
+              <span class="cert-id-tag">CR/INT25/175</span>
+            </div>
+          </article>
+
+          <!-- Cert 3: Simplilearn Data Analytics -->
+          <article class="cert-card reveal">
+            <div class="cert-top">
+              <div class="cert-badge-brand sl-badge">
+                <span class="cert-pill-icon">🎓</span>
+                <span>Simplilearn SkillUp</span>
+              </div>
+              <span class="cert-date">18 Sept 2025</span>
+            </div>
+            <h3 class="cert-title">Introduction to Data Analytics</h3>
+            <p class="cert-issuer">Certificate Code: 9002152 &middot; Simplilearn</p>
+            <p class="cert-desc">Data lifecycle exploration, metric formulation, diagnostic analytics, hypothesis evaluation, and business impact translation.</p>
+            <div class="cert-footer">
+              <a class="btn-cert" href="assets/certificates/simplilearn-data-analytics.pdf" target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                View Certificate PDF
+              </a>
+              <span class="cert-id-tag">ID: 9002152</span>
+            </div>
+          </article>
+
+          <!-- Cert 4: Simplilearn Data Visualization -->
+          <article class="cert-card reveal">
+            <div class="cert-top">
+              <div class="cert-badge-brand sl-badge">
+                <span class="cert-pill-icon">📈</span>
+                <span>Simplilearn SkillUp</span>
+              </div>
+              <span class="cert-date">24 Sept 2025</span>
+            </div>
+            <h3 class="cert-title">Introduction to Data Visualization</h3>
+            <p class="cert-issuer">Certificate Code: 9038263 &middot; Simplilearn</p>
+            <p class="cert-desc">Principles of perceptual data visualization, chart architecture, color semantics, visual hierarchy, and dashboard UX design.</p>
+            <div class="cert-footer">
+              <a class="btn-cert" href="assets/certificates/simplilearn-data-visualization.pdf" target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                View Certificate PDF
+              </a>
+              <span class="cert-id-tag">ID: 9038263</span>
+            </div>
+          </article>
+
+          <!-- Cert 5: OfficeMaster Power BI -->
+          <article class="cert-card reveal">
+            <div class="cert-top">
+              <div class="cert-badge-brand om-badge">
+                <span class="cert-pill-icon">⚡</span>
+                <span>OfficeMaster</span>
+              </div>
+              <span class="cert-date">21 Sept 2025</span>
+            </div>
+            <h3 class="cert-title">Power BI Workshop &mdash; AI Dashboards</h3>
+            <p class="cert-issuer">Verified Completion &middot; OfficeMaster</p>
+            <p class="cert-desc">Rapid creation of AI-powered interactive Power BI dashboards, DAX KPI cards, drill-through filters, and automated reporting.</p>
+            <div class="cert-footer">
+              <a class="btn-cert" href="assets/certificates/officemaster-powerbi-workshop.pdf" target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                View Certificate PDF
+              </a>
+              <span class="cert-id-tag">Verified</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & EDUCATION SECTION -->
+    <section id="experience" class="section">
+      <div class="wrap">
+        <div class="section-header reveal">
+          <p class="eyebrow">Milestones</p>
+          <h2>Experience & Education</h2>
+        </div>
+
         <ol class="timeline">
           <li class="reveal">
             <span class="when">29 Jun 2026 &ndash; 14 Aug 2026</span>
             <h3>Data Analytics Intern</h3>
-            <p class="where">Recimo Tech Solutions, Srinagar</p>
-            <p>Completed an internship in Data Analytics and delivered the customer churn prediction project from raw data to a dashboard and prediction app.</p>
+            <p class="where">Recimo Tech Solutions &middot; Srinagar, India</p>
+            <p>
+              Completed an intensive industry internship delivering end-to-end data analytics solutions. Engineered the customer churn prediction project on 7,043 client accounts, benchmarked three machine learning architectures, explained feature impacts with SHAP values, and delivered an interactive Streamlit inference app alongside an executive revenue-at-risk Power BI dashboard.
+            </p>
           </li>
+          
           <li class="reveal">
-            <span class="when">Currently studying</span>
+            <span class="when">July 2025 &ndash; August 2025</span>
+            <h3>Data Science & Python Trainee</h3>
+            <p class="where">Coder Roots (ISO 27001 Accredited)</p>
+            <p>
+              Completed rigorous practical training in Python data science, focusing on pandas, NumPy, statistical hypothesis testing, data visualization, and foundational machine learning workflows.
+            </p>
+          </li>
+
+          <li class="reveal">
+            <span class="when">2023 &ndash; Present (Expected 2027)</span>
             <h3>B.Tech, Computer Science and Engineering</h3>
-            <p class="where">School of Engineering, Design and Automation, GNA University, Phagwara</p>
+            <p class="where">School of Engineering, Design and Automation &middot; GNA University, Phagwara</p>
+            <p>
+              Pursuing computer science with deep focus on Artificial Intelligence, Machine Learning algorithms, Data Structures, Database Systems, and Applied Analytics.
+            </p>
           </li>
         </ol>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section">
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section alt">
       <div class="wrap contact reveal">
-        <h2>Contact</h2>
-        <p>I am looking for data analytics internships and entry-level roles. The best way to reach me is email.</p>
-        <div class="cta center">
-          <a class="btn primary" href="mailto:your-email@example.com">your-email@example.com</a>
-          <a class="btn" href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn" href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener">LinkedIn</a>
+        <div class="section-header">
+          <p class="eyebrow">Connect</p>
+          <h2>Let's Discuss Internships & Collaborations</h2>
+        </div>
+        <p class="contact-lead">
+          I am actively seeking <strong>AI/ML Engineer</strong> and <strong>Data Analytics Internships</strong>. Whether you have an open position, an analytics problem, or want to review my code, I’d love to connect.
+        </p>
+
+        <div class="contact-card">
+          <div class="contact-email-row">
+            <a class="email-display" href="mailto:mahdienawaz@gmail.com">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>mahdienawaz@gmail.com</span>
+            </a>
+            <button class="btn-copy" id="btnCopyEmail" title="Copy email address to clipboard">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              Copy
+            </button>
+          </div>
+
+          <div class="cta center">
+            <a class="btn primary" href="mailto:mahdienawaz@gmail.com">Send an Email</a>
+            <a class="btn" href="https://github.com/Mahdi-Nawaz" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub (@Mahdi-Nawaz)
+            </a>
+            <a class="btn" href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              LinkedIn Profile
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
   </main>
 
+  <!-- FOOTER -->
   <footer class="footer">
-    <div class="wrap">
-      <p>&copy; <span id="year">2026</span> Mahdi Nawaz</p>
-      <a href="#top">Back to top</a>
+    <div class="wrap footer-content">
+      <div class="footer-left">
+        <p>&copy; <span id="year">2026</span> <strong>Mahdi Nawaz</strong> &middot; Crafted for high-impact AI/ML & Data Analytics</p>
+      </div>
+      <div class="footer-right">
+        <a href="#top" class="back-to-top">
+          Back to top &uarr;
+        </a>
+      </div>
     </div>
   </footer>
+
+  <!-- Lightbox Modal for Visual Charts -->
+  <div class="lightbox-modal" id="lightboxModal" aria-hidden="true" role="dialog">
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox-container">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close image">&times;</button>
+      <img id="lightboxImg" src="" alt="Enlarged chart">
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toastNotification" role="alert" aria-live="polite">
+    <span class="toast-icon">✓</span>
+    <span class="toast-text" id="toastText">Email copied to clipboard!</span>
+  </div>
 
   <script src="script.js"></script>
 </body>

@@ -1,43 +1,75 @@
-# Mahdi Nawaz - Portfolio
+# Mahdi Nawaz — AI/ML & Data Analytics Portfolio
 
-A static, responsive portfolio website (HTML, CSS and JavaScript only, no build step).
+A modern, high-converting portfolio website showcasing end-to-end Machine Learning systems, Business Intelligence dashboards, and Conversational AI applications.
 
-## Files
+Built with clean, semantic HTML5, modern vanilla CSS, and lightweight JavaScript (zero framework bloat, instant load times, 100% static & deployable to GitHub Pages).
 
-| File | Purpose |
-| --- | --- |
-| `index.html` | Page content and structure |
-| `style.css` | Steel theme, layout, dark and light colours |
-| `script.js` | Mobile menu, theme toggle, scroll animations |
-| `assets/` | Project chart images |
+---
 
-## Before you publish: replace these placeholders
+## 🚀 Live Projects Featured
 
-Open `index.html` and search for:
+1. **[DataMind AI](https://datamind-ai-intelligent.streamlit.app/)** — Intelligent Data Analyst Chatbot (Claude API, Pandas, Plotly, AST Sandbox, Self-repairing loop).
+2. **[Customer Churn Prediction & Revenue Intelligence](https://github.com/Mahdi-Nawaz/churn-prediction)** — 7,043 customers, 0.842 ROC-AUC, XGBoost, SHAP Explainable AI, Streamlit app, and Power BI dashboard.
+3. **[Sahaara AI](https://sahaara-ai-mahdi.streamlit.app/)** — Empathetic Mental Health & Conversational AI Companion (Google Gemini API, Voice Studio speech recording, gTTS audio synthesis, crisis safety triage).
+4. **[GyaanBuddy](https://gyaanbuddy.streamlit.app/)** — Kid-Safe Multimodal AI Science & Mathematics Tutor (Snap & Solve vision camera OCR, 7 interactive simulation labs, parent analytics, 123 pytest safety tests).
+5. **[EcoCraft](https://ecocraft-nature-detective.vercel.app/)** — AR Backyard & Nature Detective (Three.js 3D engine, browser camera computer vision scanner, 100% on-device client processing, COPPA compliant).
 
-- `YOUR-USERNAME` - your GitHub username (appears in the project button and the contact buttons)
-- `YOUR-LINKEDIN` - your LinkedIn profile name
-- `your-email@example.com` - the email address you want shown publicly
+---
 
-## Run locally
+## 📜 Verified Certifications & Accreditations
 
-Double-click `index.html`, or from this folder run:
+- **Microsoft Learn**: Clean, transform, and load data in Power BI (Authorized by Satya Nadella)
+- **Coder Roots**: Python & Data Science Training (ISO/IEC 27001:2022 Certified, IAF Accredited)
+- **Simplilearn SkillUp**: Introduction to Data Analytics (Certificate Code: 9002152)
+- **Simplilearn SkillUp**: Introduction to Data Visualization (Certificate Code: 9038263)
+- **OfficeMaster**: PowerBI Workshop — AI-Powered Dashboards
+
+Official certificate PDFs are organized in [`assets/certificates/`](assets/certificates/).
+
+---
+
+## 📁 File Structure
 
 ```
+portfolio/
+├── index.html                  # Main portfolio semantic markup
+├── style.css                   # Obsidian & Steel design system, dark/light themes
+├── script.js                   # Filter tabs, theme switcher, lightbox, clipboard copy
+├── README.md                   # Documentation & deployment guide
+└── assets/
+    ├── profile.png             # Professional profile headshot
+    ├── churn-by-contract.png   # Analysis chart (Contract type)
+    ├── contract-internet-heatmap.png # Risk heatmap
+    ├── protective-services.png # Protective services impact chart
+    └── certificates/           # Official certificate PDFs
+        ├── microsoft-powerbi-cert.pdf
+        ├── coder-roots-python-datascience.pdf
+        ├── simplilearn-data-analytics.pdf
+        ├── simplilearn-data-visualization.pdf
+        └── officemaster-powerbi-workshop.pdf
+```
+
+---
+
+## 💻 Run Locally
+
+Double-click `index.html` in your browser, or run a local Python server:
+
+```bash
 python -m http.server 8000
 ```
+Then navigate to `http://localhost:8000`.
 
-then open http://localhost:8000.
+---
 
-## Publish on GitHub Pages
+## 🌐 Publish to GitHub Pages
 
-1. Create a new public repository on GitHub, for example `portfolio` (or `YOUR-USERNAME.github.io` for a root address).
-2. Upload all files in this folder (`index.html`, `style.css`, `script.js`, `README.md` and the `assets` folder).
-3. Open the repository, go to Settings, then Pages.
-4. Under Build and deployment, choose Deploy from a branch, select `main` and `/ (root)`, and save.
-5. After a minute the site is live at `https://YOUR-USERNAME.github.io/portfolio/`.
-
-## Customise
-
-- Add another project by copying the `<article class="project">` block in `index.html`.
-- Change colours in the `:root` block at the top of `style.css`.
+1. Commit and push this directory to your GitHub repository:
+   ```bash
+   git add .
+   git commit -m "Add DataMind AI, Sahaara AI, GyaanBuddy, EcoCraft, profile photo, and verified certifications"
+   git push origin main
+   ```
+2. In your GitHub repository, open **Settings** &rarr; **Pages**.
+3. Under **Build and deployment**, select **Deploy from a branch**, choose `main` and `/ (root)`, and click **Save**.
+4. Your portfolio will be live at `https://Mahdi-Nawaz.github.io/portfolio/`.
