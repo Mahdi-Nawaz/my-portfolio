@@ -77,7 +77,7 @@
           <div class="cta">
             <a class="btn primary" href="#projects">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-              Explore Projects (10)
+              Explore Projects (11)
             </a>
             <a class="btn secondary" href="#certifications">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
@@ -261,7 +261,7 @@
 
         <!-- Filter Buttons -->
         <div class="filter-bar reveal">
-          <button class="filter-btn active" data-filter="all">All Projects (10)</button>
+          <button class="filter-btn active" data-filter="all">All Projects (11)</button>
           <button class="filter-btn" data-filter="ai-ml">AI/ML</button>
           <button class="filter-btn" data-filter="data-analytics">Data Analytics & BI</button>
         </div>
@@ -497,7 +497,56 @@
             </div>
           </article>
 
-          <!-- PROJECT 5: MFAnalytica - Mutual Fund Analytics Platform -->
+          <!-- PROJECT 5: Nifty100 Financial Intelligence Platform -->
+          <article class="project-card reveal" data-category="data-analytics ai-ml">
+            <div class="project-header">
+              <div class="project-meta">
+                <span class="badge featured">⭐ Algorithmic Equity &middot; Live</span>
+                <span class="badge tag">Python &middot; Streamlit &middot; FastAPI &middot; ML</span>
+              </div>
+              <h3 class="project-title">Nifty 100 &mdash; Financial Intelligence Platform</h3>
+              <p class="project-summary">
+                Engineered an automated stock intelligence engine for 90+ Nifty 100 tickers using Isolation Forest, 3D-PCA anomaly detection, and Monte Carlo risk valuation.
+              </p>
+            </div>
+
+            <div class="project-body">
+              <h4>Key Capabilities & Technical Highlights</h4>
+              <ul class="list">
+                <li><strong>Isolation Forest & 3D-PCA Anomaly Detection:</strong> Real-time quantitative screening across 90+ Nifty 100 equities to flag statistical valuation anomalies and structural market deviations.</li>
+                <li><strong>Monte Carlo Risk Valuation:</strong> Simulates probabilistic stock trajectory distributions to compute portfolio Value-at-Risk (VaR) and stress-test equities under volatile market regimes.</li>
+                <li><strong>Comprehensive Fundamental Analysis:</strong> Automated ingestion and screening of corporate health ratios including P/E, ROE, debt-to-equity, and cash flow yields.</li>
+                <li><strong>Sub-Second Financial Diagnostics:</strong> Interactive technical charting (candlesticks, moving averages, volume surges) and financial tear-sheets built with Streamlit and Plotly.</li>
+              </ul>
+
+              <div class="project-badges-row">
+                <ul class="chips">
+                  <li>Python</li>
+                  <li>Pandas</li>
+                  <li>Streamlit</li>
+                  <li>FastAPI</li>
+                  <li>Isolation Forest</li>
+                  <li>3D-PCA</li>
+                  <li>Monte Carlo</li>
+                  <li>Plotly</li>
+                  <li>Financial Modeling</li>
+                </ul>
+              </div>
+
+              <div class="project-actions">
+                <a class="btn primary" href="https://nifty100-intelligence.streamlit.app/" target="_blank" rel="noopener">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  Launch Live App
+                </a>
+                <a class="btn" href="https://github.com/Mahdi-Nawaz/Nifty100-Financial-Intelligence-Platfrom" target="_blank" rel="noopener">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                  View GitHub Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 6: MFAnalytica - Mutual Fund Analytics Platform -->
           <article class="project-card reveal" data-category="data-analytics ai-ml">
             <div class="project-header">
               <div class="project-meta">
@@ -516,7 +565,7 @@
                 <li><strong>Meta Prophet Time-Series Forecasting:</strong> Generates probabilistic future NAV projections and trend shifts across historical fund performances.</li>
                 <li><strong>2,000-Path Monte Carlo Simulations:</strong> Models portfolio downside volatility and stress-tests asset allocations under extreme market shocks.</li>
                 <li><strong>RAG-Based Gemini AI Assistant:</strong> Leverages Retrieval-Augmented Generation to answer investor questions and tailor personalized asset allocation recommendations.</li>
-                <li><strong>Nifty 100 Health Diagnostics:</strong> Fundamental ratio analysis (P/E, ROE, debt-to-equity, cash flows) for transparent equity screening.</li>
+                <li><strong>Risk-Adjusted Alpha Metrics:</strong> Computes Sharpe ratio, Sortino ratio, max drawdown, and beta volatility benchmarking.</li>
               </ul>
 
               <div class="project-badges-row">
@@ -532,11 +581,7 @@
               </div>
 
               <div class="project-actions">
-                <a class="btn primary" href="https://nifty100-intelligence.streamlit.app/" target="_blank" rel="noopener">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                  Launch Live App
-                </a>
-                <a class="btn" href="https://github.com/Mahdi-Nawaz/Nifty100-Financial-Intelligence-Platfrom" target="_blank" rel="noopener">
+                <a class="btn" href="https://github.com/Mahdi-Nawaz" target="_blank" rel="noopener">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
                   View GitHub Code
                 </a>
